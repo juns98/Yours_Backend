@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "typeRoots": [
+      "./src/types/express.d.ts",
+      "./node_modules/@types"
+    ],
+    "resolveJsonModule": true
+  },
+  "hooks": [
+    "copy-files"
+  ],
+  "include": [
+    "./src/**/*",
+    "src/contract/**/*",
+    "tests"
+  ],
+  "exclude": [
+    "node_modules",
+    "_test_"
+  ]
+}
